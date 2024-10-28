@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Poppin, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --color-primary: #2B78E4;
+  /* --color-primary: #3a3a3a; */
+  --color-secondary: #141414;
+  --color-black: #272d4e;
+  --color-blackScale: #717171;
+  --color-bgBlack: #191617;
+  --color-bgFooter: #5b5b5b;
+  --color-gray: #b4b4b9;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #141414;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: var(--color-primary);
+}
+
+button:focus {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+#app {
+  width: 100%;
+  margin: 0 auto;
+  /* text-align: center; */
+}
+
+h1 {
+  @apply text-[3rem] lg:text-[4.5rem] xl:text-[5.5rem];
+}
+
+h2 {
+  @apply text-[1.5rem] lg:text-[2rem] xl:text-[3rem];
+}
+
+h3 {
+  @apply text-[1.3rem] lg:text-[1.6rem];
+}
+
+h4 {
+  @apply text-[1rem] xl:text-[1.2rem];
+}
+
+.linearBg {
+  /* background: linear-gradient(85.12deg, #4f12ea -33.54%, #8d1b65 24.17%, #120395 99.96%); */
+  background: linear-gradient(
+    135deg,
+    #2B78E4 0%,
+    #8A2BE2 50%,
+    #1E54A7 100%
+  );
+  opacity: 0.8; 
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.linearSecondaryBg {
+  background: linear-gradient(to right, #6EE7B7, #3B82F6);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.linearDark {
+  background: linear-gradient(85.12deg, #61285b -33.54%, #251e51 24.17%, #021a70 99.96%);
+}
+
+.linear {
+  background: linear-gradient(
+    135deg,
+    #2B78E4 0%,
+    #8A2BE2 50%,
+    #1E54A7 100%
+  );
+  opacity: 0.8; 
+}
+.glassMorphism {
+  background: rgba(255, 255, 255, 0.108);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
