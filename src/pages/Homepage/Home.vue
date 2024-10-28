@@ -58,8 +58,6 @@ function goTo(link) {
 
   &__line {
     position: absolute;
-    // top: 110px;
-    // right: 122px;
   }
   &__text {
     z-index: 10;

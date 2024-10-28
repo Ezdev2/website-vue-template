@@ -1,10 +1,7 @@
 <script setup>
+import { ref, onMounted, onUnmounted } from 'vue';
 import Navbar from "./components/Layouts/Navbar.vue";
 import Footer from "./components/Layouts/Footer.vue";
-import { useRouter } from "vue-router";
-import { ref, onMounted, onUnmounted } from 'vue';
-
-const route = useRouter();
 
 const isScrolling = ref(false);
 
@@ -33,8 +30,10 @@ onUnmounted(() => {
     <Navbar
       class="fixed"
     />
-    <router-view class="mt-[86px]" v-slot="{ Component }">
-        <component data-aos="fade-up" class="bodypage w-full" :is="Component" />
+    <router-view v-slot="{ Component }">
+        <div data-aos="fade-up" class="mt-8 bodypage w-full">
+          <component :is="Component" />
+        </div>
     </router-view>
     <Footer
       class="footer"

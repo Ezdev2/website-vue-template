@@ -5,6 +5,13 @@ import router from './router';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-createApp(App).use(router).mount('#app')
+const app = createApp(App)
 
-AOS.init()
+app.use(router)
+
+// Initialiser AOS après le montage
+app.mount('#app')
+AOS.init({
+  duration: 800,
+  once: true
+})

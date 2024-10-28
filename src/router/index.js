@@ -1,4 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
+import AOS from 'aos'
+
+// Pages
 import Book from '../pages/Book/Book.vue';
 import CallToAction from '../pages/CTA/CallToAction.vue';
 import Formation from "../pages/Formation/Formation.vue";
@@ -64,9 +67,13 @@ const router = createRouter({
         if (to) {
             return { selector: to.hash };
         }
-        
+
         return { left: 0, top: 0 };
     },
+})
+
+router.afterEach(() => {
+    AOS.refresh()
 })
 
 export default router
