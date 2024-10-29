@@ -1,9 +1,12 @@
 <template>
   <!-- Hero -->
-  <div class="home h-[100vh]">
+  <div class="home h-[100vh] relative">
     <!-- Hero Side images -->
-    <div class="home__line top-[180px] lg:top-[110px] right-[0] lg:right-[122px]">
-      <img width="560px" src="../../assets/hero-img.svg" alt="" />
+    <div class="home__line bottom-[50px] right-[0]">
+      <img width="800px" src="../../assets/hero-img.svg" alt="" />
+    </div>
+    <div class="absolute right-[80px] bottom-0 hidden xl:block">
+      <img class="transform scale-x-[-1]" width="600px" src="../../assets/hero-image.png" alt="" />
     </div>
     <!-- Hero Banner Text -->
     <div class="home__text mx-[24px] lg:mx-[122px] flex flex-col gap-4 justify-center items-center max-w-[1420px]">
@@ -15,7 +18,7 @@
         <p class="text-center lg:text-left text-white">+1 000 entreprises de toutes tailles font appel à nos formations commerciales pour augmenter la performance
           de leur force de vente.</p>
         <div class="flex gap-2 flex-col md:flex-row">
-          <button class="flex gap-2 items-center text-center px-6 py-3.5 linear text-white" @click="goTo('/formation')">
+          <button class="flex gap-2 items-center text-center px-6 py-3.5 bg-primary text-white" @click="goTo('/formation')">
             <img src="../../assets/arrow.svg" alt="">
             <span>
               Découvrir nos formations
@@ -53,11 +56,12 @@ function goTo(link) {
 
 <style lang="scss" scoped>
 .home {
-  background-color: var(--color-secondary);
   @apply flex flex-col gap-6 justify-center w-full;
 
   &__line {
     position: absolute;
+    // top: 110px;
+    // right: 122px;
   }
   &__text {
     z-index: 10;

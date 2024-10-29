@@ -3,7 +3,7 @@
     <div class="flex flex-col gap-2">
       <p class="font-bold text-blackScale uppercase">Qui sommes-nous ?
       </p>
-      <h2 class="font-bold text-primary">A propos de artis Momentum, le spécialiste de la formation des commerciaux
+      <h2 class="font-bold text-primary">A propos de website vue template, le spécialiste de la formation des commerciaux
       </h2>
     </div>
 
@@ -85,7 +85,7 @@ const boxes = [
     image: 'https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=2400&h=1200&dpr=1',
     icon: 'uil:user',
     title: 'Le mentorat',
-    description: "Le mentorat chez Artis Momentum est né d’une envie de partage, de transmettre un savoir-faire à travers un savoir-être exceptionnel."
+    description: "Le mentorat est né d’une envie de partage, de transmettre un savoir-faire à travers un savoir-être exceptionnel."
   },
 ];
 

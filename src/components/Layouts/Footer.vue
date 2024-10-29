@@ -15,7 +15,7 @@ onMounted(() => {
     <div class="footer">
         <div class="hidden md:flex flex-col gap-[24px]">
             <p class="text-left">© Copyright {{ currentYear }}</p>
-            <p class="footer__title">ARTIS MOMENTUM</p>
+            <p class="footer__title">Website Vue Template by <a href="https://github.com/Ezdev2"></a>Ezdev2</p>
         </div>
         <div class="flex flex-col items-center md:items-start gap-[24px]">
             <p class="footer__title">Menu</p>
@@ -31,13 +31,13 @@ onMounted(() => {
         </div>
         <div class="flex flex-col items-center md:items-start  gap-[24px]">
             <p class="footer__title">Nous contacter</p>
-            <a href="#">Téléphone: 020 000 000</a>
+            <a href="#">Téléphone: 000 000 000</a>
             <a href="#">Email:  test@gmail.com</a>
-            <a href="#">Adresse: Rue 201, Ankatso</a>
+            <a href="#">Adresse: 101, Antananarivo</a>
         </div>
         <div class="flex md:hidden flex-col gap-[24px]">
             <p class="text-left">© Copyright {{ currentYear }}</p>
-            <p class="footer__title">ARTIS MOMENTUM</p>
+            <p class="footer__title">Website Vue Template by <a href="https://github.com/Ezdev2"></a>Ezdev2</p>
         </div>
     </div>
 </template>

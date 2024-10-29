@@ -6,7 +6,7 @@
     <section class="mb-12">
       <h3 class="text-xl font-semibold mb-4">Notre mission</h3>
       <p class="text-gray-300">
-        Chez Artis Momentum, nous croyons en l'importance de la stratégie et de l'exécution pour réussir. Notre mission
+        Nous croyons en l'importance de la stratégie et de l'exécution pour réussir. Notre mission
         est d'aider les entreprises à maximiser leur potentiel, en leur fournissant des solutions sur mesure qui
         combinent expertise commerciale, stratégie de communication, et performance commerciale.
       </p>
@@ -30,9 +30,8 @@
           <Icon icon="ic:baseline-plus" width="24" height="24" style="color: white" />
         </div>
         <p v-if="isSectionOpen('history1')" class="text-gray-300 mt-2">
-          Fondée en 2024, Artis momentum a été créée avec l'objectif de fournir aux entreprises les outils nécessaires
-          pour exceller dans leurs activités commerciales. Depuis nos débuts, nous avons toujours mis l'accent sur
-          l'accompagnement personnalisé et l'optimisation des processus commerciaux.
+          Ce template est conçu pour faciliter l'intégration de designs par les développeurs, offrant une base solide pour vos projets.
+
         </p>
       </div>
 

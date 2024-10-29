@@ -295,7 +295,7 @@
       image: 'https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=2400&h=1200&dpr=1',
       icon: 'uil:user',
       title: 'Le mentorat',
-      description: "Le mentorat chez Artis Momentum est né d’une envie de partage, de transmettre un savoir-faire à travers un savoir-être exceptionnel.",
+      description: "Le mentorat est né d’une envie de partage, de transmettre un savoir-faire à travers un savoir-être exceptionnel.",
       detailText: `
         <p>
       <strong class="linearSecondaryBg">Des formations sur mesure pour renforcer vos équipes commerciales</strong>

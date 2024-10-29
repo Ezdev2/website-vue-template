@@ -1,5 +1,5 @@
 <template>
-    <div class="sm:py-[122px] p-[24px] sm:px-[122px] flex flex-col gap-6 justify-center">
+    <div class="sm:py-[122px] p-[24px] sm:px-[122px] flex flex-col gap-6 justify-center bg-black">
         <div class="flex flex-col gap-2">
             <p class="font-bold text-blackScale text-left uppercase">Découvrez notre approche pédagogique
             </p>
@@ -8,7 +8,7 @@
             </h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            <div class="service-card flex flex-col gap-4  bg-white rounded-lg p-6 transition-all hover:bg-gray-700 hover:shadow-lg"
+            <div class="service-card flex flex-col gap-4 rounded-lg p-6 transition-all hover:bg-gray-700 hover:shadow-lg"
                 v-for="(item, index) in data" :key="index">
                 <Icon class="h-8 w-8" :icon="item.icon" />
                 <div class="flex flex-col gap-8">
@@ -63,7 +63,7 @@ function goTo(link) {
 <style lang="scss" scoped>
 .service-card {
     position: relative;
-    background: var(--color-secondary);
+    background: var(--color-black);
     color: white;
 }
 

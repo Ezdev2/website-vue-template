@@ -1,9 +1,12 @@
-<svg width="192" height="292" viewBox="0 0 192 292" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="822" height="568" viewBox="0 0 822 568" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#45389e;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#6c5ce7;stop-opacity:1" />
+      <stop offset="0%" style="stop-color:#2B78E4; stop-opacity:1" /> <!-- Bright Blue -->
+      <stop offset="100%" style="stop-color:#1E54A7; stop-opacity:1" /> <!-- Darker Blue -->
     </linearGradient>
+    <filter id="blur-filter">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+    </filter>
     <filter id="glow">
       <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
       <feMerge>
@@ -13,25 +16,28 @@
     </filter>
   </defs>
   
+  <!-- Background Path -->
+  <path d="M318.726 568C206.776 568 96.5237 538.677 0 483.146L56.6121 384.268C136.011 429.882 226.59 453.964 318.726 453.964C609.571 453.964 846.21 217.11 846.21 -74H960C960 280.007 672.269 568 318.585 568H318.726Z" fill="#152e3a"></path>
+  
+  <!-- Animated Circles -->
   <g filter="url(#blur-filter)">
     <circle opacity="0.2" cx="90" cy="152" r="80" stroke="url(#grad1)" stroke-width="2" fill="none">
       <animate attributeName="r" values="78;82;78" dur="4s" repeatCount="indefinite" />
     </circle>
     
-    <path opacity="0.3" d="M40 292C62.0914 292 80 274.091 80 252C80 229.909 62.0914 212 40 212C17.9086 212 0 229.909 0 252C0 274.091 17.9086 292 40 292Z" fill="url(#grad1)">
-      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -5; 0 0" dur="3s" repeatCount="indefinite" />
-    </path>
+    <circle opacity="0.3" cx="250" cy="300" r="70" fill="none" stroke="url(#grad1)" stroke-width="2">
+      <animate attributeName="cy" values="300;290;300;310;300" dur="4s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values="2;3;2;1;2" dur="4s" repeatCount="indefinite" />
+    </circle>
     
-    <g filter="url(#glow)">
-      <path opacity="0.3" d="M140 2C156.667 18.6667 173.333 18.6667 190 2" stroke="#3498db" stroke-width="2">
-        <animate attributeName="d" values="M140 2C156.667 18.6667 173.333 18.6667 190 2; M140 12C156.667 28.6667 173.333 28.6667 190 12; M140 2C156.667 18.6667 173.333 18.6667 190 2" dur="4s" repeatCount="indefinite" />
-      </path>
-      <path opacity="0.3" d="M140 22C156.667 38.6667 173.333 38.6667 190 22" stroke="#9b59b6" stroke-width="2">
-        <animate attributeName="d" values="M140 22C156.667 38.6667 173.333 38.6667 190 22; M140 32C156.667 48.6667 173.333 48.6667 190 32; M140 22C156.667 38.6667 173.333 38.6667 190 22" dur="4s" repeatCount="indefinite" />
-      </path>
-      <path opacity="0.3" d="M140 42C156.667 58.6667 173.333 58.6667 190 42" stroke="#3498db" stroke-width="2">
-        <animate attributeName="d" values="M140 42C156.667 58.6667 173.333 58.6667 190 42; M140 52C156.667 68.6667 173.333 68.6667 190 52; M140 42C156.667 58.6667 173.333 58.6667 190 42" dur="4s" repeatCount="indefinite" />
-      </path>
-    </g>
+    <circle opacity="0.3" cx="500" cy="150" r="100" fill="none" stroke="url(#grad1)" stroke-width="2">
+      <animate attributeName="cx" values="500;480;500;520;500" dur="5s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values="2;4;2;1;2" dur="5s" repeatCount="indefinite" />
+    </circle>
+    
+    <circle opacity="0.8" cx="700" cy="100" r="60" fill="none" stroke="url(#grad1)" stroke-width="3">
+      <animate attributeName="cx" values="700;680;700;720;700" dur="6s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values="3;5;3;2;3" dur="6s" repeatCount="indefinite" />
+    </circle>
   </g>
 </svg>

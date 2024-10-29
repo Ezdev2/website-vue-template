@@ -10,7 +10,7 @@
   --color-primary: #2B78E4;
   /* --color-primary: #3a3a3a; */
   --color-secondary: #141414;
-  --color-black: #272d4e;
+  --color-black: #101639;
   --color-blackScale: #717171;
   --color-bgBlack: #191617;
   --color-bgFooter: #5b5b5b;
@@ -29,6 +29,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background-color: #141414;
+  /* background-color: #152e3a; */
 }
 
 button {

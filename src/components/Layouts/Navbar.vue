@@ -46,7 +46,7 @@ function toggleDrawer() {
             :class="['flex flex-row items-center justify-between', isScrolling ? 'nav-scrolling my-[16px] mx-[24px] pl-8 pr-2 py-1.5 rounded-[18px]' : 'bg-secondary lg:px-[122px] px-[24px] py-4 w-full']">
             <div>
                 <a href="/" class="font-[800] text-[#fff]">
-                    ARTIS MOMENTUM
+                    WEBSITE VUE TEMPLATE
                 </a>
             </div>
 
