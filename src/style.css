@@ -7,7 +7,7 @@
   line-height: 1.5;
   font-weight: 400;
 
-  --color-primary: #2B78E4;
+  --color-primary: #2b78e4;
   /* --color-primary: #3a3a3a; */
   --color-secondary: #141414;
   --color-black: #101639;
@@ -28,8 +28,21 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: #141414;
-  /* background-color: #152e3a; */
+  position: relative;
+  background-color: #0b0e14;
+  background-image: url("./assets/bg.svg");
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+
+.body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(11, 14, 20, 0.5);
+  z-index: 0;
 }
 
 button {
@@ -76,33 +89,28 @@ h4 {
 
 .linearBg {
   /* background: linear-gradient(85.12deg, #4f12ea -33.54%, #8d1b65 24.17%, #120395 99.96%); */
-  background: linear-gradient(
-    135deg,
-    #2B78E4 0%,
-    #8A2BE2 50%,
-    #1E54A7 100%
-  );
-  opacity: 0.8; 
+  background: linear-gradient(135deg, #2b78e4 0%, #8a2be2 50%, #1e54a7 100%);
+  opacity: 0.8;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .linearSecondaryBg {
-  background: linear-gradient(to right, #6EE7B7, #3B82F6);
+  background: linear-gradient(to right, #6ee7b7, #3b82f6);
   -webkit-background-clip: text;
   color: transparent;
 }
 .linearDark {
-  background: linear-gradient(85.12deg, #61285b -33.54%, #251e51 24.17%, #021a70 99.96%);
+  background: linear-gradient(
+    85.12deg,
+    #61285b -33.54%,
+    #251e51 24.17%,
+    #021a70 99.96%
+  );
 }
 
 .linear {
-  background: linear-gradient(
-    135deg,
-    #2B78E4 0%,
-    #8A2BE2 50%,
-    #1E54A7 100%
-  );
-  opacity: 0.8; 
+  background: linear-gradient(135deg, #2b78e4 0%, #8a2be2 50%, #1e54a7 100%);
+  opacity: 0.8;
 }
 .glassMorphism {
   background: rgba(255, 255, 255, 0.108);
@@ -110,3 +118,4 @@ h4 {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 }
+

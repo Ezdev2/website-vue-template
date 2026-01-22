@@ -6,7 +6,7 @@
       <img width="800px" src="../../assets/hero-img.svg" alt="" />
     </div>
     <div class="absolute right-[80px] bottom-0 hidden xl:block">
-      <img class="transform scale-x-[-1]" width="600px" src="../../assets/hero-image.png" alt="" />
+      <img class="" width="1000px" src="../../assets/hero.png" alt="" />
     </div>
     <!-- Hero Banner Text -->
     <div class="home__text mx-[24px] lg:mx-[122px] flex flex-col gap-4 justify-center items-center max-w-[1420px]">
